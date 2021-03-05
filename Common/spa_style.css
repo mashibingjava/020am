@@ -1,0 +1,109 @@
+html,body,dl,dt,dd,ol,ul,li,h1,h2,h4,h3,img,p,span{margin:0;padding:0;list-style:none;font-size:100%}
+body{margin:0 auto;color:#555555;font:normal 1em/1.7 "寰蒋闆呴粦", "Microsoft YaHei","瀹嬩綋"}
+a{color:#000; text-decoration:none;}
+a:hover{text-decoration:underline;}
+.space1{width:100%; clear:both;  height:1em}
+.space2{width:100%; clear:both;  height:2em}
+.space3{width:100%; clear:both;  height:3em}
+.space0{height:0;line-height:0; clear:both; width:100%;}
+img{max-width:100%;vertical-align:middle}
+h1,h2,h3,strong{font-weight:normal}
+.w{width:90%; margin:0 auto;}
+.t_c{text-align:center}
+.text-indent{text-indent:2em}
+.spa_head {width:100%; position: relative; border-bottom:solid 1px #dadada; overflow:hidden }
+.spa_logo {text-align: center; position:relative;}
+nav a{color:#fff;}
+.spa_nav-trigger { position: absolute; display: inline-block; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+.spa_nav-trigger a{color:#fff;}
+.spa_nav-trigger { top: 20%; left: 1%; height: 44px; width: 44px; z-index: 5; /* image replacement */
+overflow: hidden; text-indent: 100%; white-space: nowrap; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+.spa_nav-trigger .spa_icon { /* icon created in CSS */
+position: absolute; left: 50%; top: 50%; bottom: auto; right: auto; -webkit-transform: translateX(-50%) translateY(-50%); -moz-transform: translateX(-50%) translateY(-50%); -ms-transform: translateX(-50%) translateY(-50%); -o-transform: translateX(-50%) translateY(-50%); transform: translateX(-50%) translateY(-50%); display: inline-block; width: 25px; height: 2px; background-color: #a81043; z-index: 10; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+.spa_nav-trigger .spa_icon::before, .spa_nav-trigger .spa_icon:after { /* upper and lower lines of the menu icon */
+position: absolute; top: 0; right: 0; width: 100%; height: 100%; background-color: #a81043; /* Force Hardware Acceleration in WebKit */
+-webkit-transform: translateZ(0); -moz-transform: translateZ(0); -ms-transform: translateZ(0); -o-transform: translateZ(0); transform: translateZ(0); -webkit-backface-visibility: hidden; backface-visibility: hidden; /* apply transition to transform property */
+-webkit-transition: -webkit-transform .3s; -moz-transition: -moz-transform .3s; transition: transform .3s; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; content: ''; }
+.spa_nav-trigger .spa_icon::before { -webkit-transform: translateY(-8px) rotate(0deg); -moz-transform: translateY(-8px) rotate(0deg); -ms-transform: translateY(-8px) rotate(0deg); -o-transform: translateY(-8px) rotate(0deg); transform: translateY(-8px) rotate(0deg); -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; content: ''; }
+.spa_nav-trigger .spa_icon::after { -webkit-transform: translateY(8px) rotate(0deg); -moz-transform: translateY(8px) rotate(0deg); -ms-transform: translateY(8px) rotate(0deg); -o-transform: translateY(8px) rotate(0deg); transform: translateY(8px) rotate(0deg); -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; content: ''; }
+.spa_nav-trigger::before, .spa_nav-trigger::after { /* 2 rounded colored backgrounds for the menu icon */
+position: absolute; top: 0; left: 0; border-radius: 50%; height: 100%; width: 100%; /* Force Hardware Acceleration in WebKit */
+-webkit-transform: translateZ(0); -moz-transform: translateZ(0); -ms-transform: translateZ(0); -o-transform: translateZ(0); transform: translateZ(0); -webkit-backface-visibility: hidden; backface-visibility: hidden; -webkit-transition-property: -webkit-transform; -moz-transition-property: -moz-transform; transition-property: transform; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; content: ''; }
+.spa_nav-trigger::before { -webkit-transform: scale(1); -moz-transform: scale(1); -ms-transform: scale(1); -o-transform: scale(1); transform: scale(1); -webkit-transition-duration: 0.3s; -moz-transition-duration: 0.3s; transition-duration: 0.3s; -webkit-transition-delay: 0.4s; -moz-transition-delay: 0.4s; transition-delay: 0.4s; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; content: ''; }
+.spa_nav-trigger::after { -webkit-transform: scale(0); -moz-transform: scale(0); -ms-transform: scale(0); -o-transform: scale(0); transform: scale(0); -webkit-transition-duration: 0s; -moz-transition-duration: 0s; transition-duration: 0s; -webkit-transition-delay: 0s; -moz-transition-delay: 0s; transition-delay: 0s; color: #a81043; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; content: ''; }
+.spa_nav-trigger.close-nav::before { /* user clicks on the .spa_nav-trigger element - 1st rounded background disappears */
+-webkit-transform: scale(0); -moz-transform: scale(0); -ms-transform: scale(0); -o-transform: scale(0); transform: scale(0); -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; content: ''; }
+.spa_nav-trigger.close-nav::after { /* user clicks on the .spa_nav-trigger element - 2nd rounded background appears */
+-webkit-transform: scale(1); -moz-transform: scale(1); -ms-transform: scale(1); -o-transform: scale(1); transform: scale(1); -webkit-transition-duration: 0.3s; -moz-transition-duration: 0.3s; transition-duration: 0.3s; -webkit-transition-delay: 0.4s; -moz-transition-delay: 0.4s; transition-delay: 0.4s; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; content: ''; }
+.spa_nav-trigger.close-nav .spa_icon { /* user clicks on the .spa_nav-trigger element - transform the icon */
+background-color: rgba(255, 255, 255, 0); -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+.spa_nav-trigger.close-nav .spa_icon::before, .spa_nav-trigger.close-nav .spa_icon::after { background-color: #fff; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; content: ''; }
+.spa_nav-trigger.close-nav .spa_icon::before { -webkit-transform: translateY(0) rotate(45deg); -moz-transform: translateY(0) rotate(45deg); -ms-transform: translateY(0) rotate(45deg); -o-transform: translateY(0) rotate(45deg); transform: translateY(0) rotate(45deg); -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; content: ''; }
+.spa_nav-trigger.close-nav .spa_icon::after { -webkit-transform: translateY(0) rotate(-45deg); -moz-transform: translateY(0) rotate(-45deg); -ms-transform: translateY(0) rotate(-45deg); -o-transform: translateY(0) rotate(-45deg); transform: translateY(0) rotate(-45deg); -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; content: ''; }
+.spa_primary-nav { /* by default it's hidden */
+position: fixed; left: 0; top: 0; height: 100%; width: 100%; padding: 80px 5%; z-index: 3; /*background-color:#000;*/
+overflow: auto; /* this fixes the buggy scrolling on webkit browsers - mobile devices only - when overflow property is applied */
+-webkit-overflow-scrolling: touch; visibility: hidden; opacity: 0; -webkit-transition: visibility 0s, opacity 0.3s; -moz-transition: visibility 0s, opacity 0.3s; transition: visibility 0s, opacity 0.3s; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+.spa_primary-nav li{margin: 1em 0; text-align: center; text-transform: capitalize; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+.spa_primary-nav a{font-size:20px; font-size:1.25rem; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; -webkit-transition: color 0.2s; -moz-transition: color 0.2s; transition: color 0.2s; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+.no-touch .spa_primary-nav a:hover{color:#FFF; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+.spa_primary-nav.fade-in { /* navigation visible at the end of the circle animation */
+visibility: visible; opacity: 1; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+.spa_overlay-nav, .spa_overlay-content { /* containers of the 2 main rounded backgrounds - these containers are used to position the rounded bgs behind the menu icon */
+position: fixed; top: 25px; left: 5%; height: 4px; width: 4px; -webkit-transform: translateX(-20px) translateY(20px); -moz-transform: translateX(-20px) translateY(20px); -ms-transform: translateX(-20px) translateY(20px); -o-transform: translateX(-20px) translateY(20px); transform: translateX(-20px) translateY(20px); -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+.spa_overlay-nav span, .spa_overlay-content span { display: inline-block; position: absolute; border-radius: 50%; /* Force Hardware Acceleration in WebKit */
+-webkit-transform: translateZ(0); -moz-transform: translateZ(0); -ms-transform: translateZ(0); -o-transform: translateZ(0); transform: translateZ(0); -webkit-backface-visibility: hidden; backface-visibility: hidden; will-change: transform; -webkit-transform-origin: 50% 50%; -moz-transform-origin: 50% 50%; -ms-transform-origin: 50% 50%; -o-transform-origin: 50% 50%; transform-origin: 50% 50%; -webkit-transform: scale(0); -moz-transform: scale(0); -ms-transform: scale(0); -o-transform: scale(0); transform: scale(0); -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+.spa_overlay-nav.is-hidden, .spa_overlay-content.is-hidden { /* background fades out at the end of the animation */
+opacity: 0; visibility: hidden; -webkit-transition: opacity .3s 0s, visibility 0s .3s; -moz-transition: opacity .3s 0s, visibility 0s .3s; transition: opacity .3s 0s, visibility 0s .3s; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+.spa_overlay-nav {z-index: 2; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+.spa_overlay-nav span {background-color: #a81043; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+.spa_overlay-content {z-index: 4; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box;}
+.spa_overlay-content span {background-color: #fff; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+
+.spa_banner{margin:auto; text-align:center; width:90%; max-height:500px; overflow:hidden}
+.spa_about{overflow:hidden;}
+.spa_about_tit,.about_cont{ text-align:center;}
+.more{text-align:center; margin:1.2em auto 1em auto; width:138px; height:40px; line-height:36px; border-radius:6px; border:#a21911 1px solid;color:#a21911}
+.more a{color:#a21911}
+.spa_en{background:#f2f2f2;padding:1em 0;}
+.spa_en_cont{float:left; margin:1em 2.5em;text-align:center;display:inline-block}
+.spa_en_cont img{display:block; padding:0.315em; border:#bababa 1px dashed; border-radius:200px; width:200px; height:200px;}
+.spa_box1{padding:1em 0;}
+.spa_news{width:90%; overflow:hidden}
+.spa_news li{float:left; width:46%; margin:0 0.3125em; padding-top:0.5em; overflow:hidden;}
+.spa_news_cont{border-bottom:#dbd4cd 1px dashed; padding:0.625em 0;overflow:hidden; clear:both}
+.spa_news_cont_left{float:left;height:70px; width:15%;background:#e60b1e;margin-top:5px;}
+.spa_news_cont_right{float:right; width:84%;}
+.spa_news_cont_left i{color:#fff;font-size:1.2em; text-align:center; width:80%; margin:0 10%; float:left; line-height:36px; border-bottom:#f27e88 1px solid;}
+.spa_news_cont_left span{ text-align:center; width:100%; float:left; line-height:30px; color:#fff;}
+.spa_left{float:left; width:25%;}
+.spa_right{float:right; width:73%}
+.spa_right_news li{border-bottom:#999 dotted 1px; margin-top:0.8em;}
+.spa_right_tit a{color:#555555}
+.spa_left_tit{height:190px;line-height:190px;color:#fff;font-size:2em; background:#a21911; text-align:center;overflow: hidden; text-overflow: ellipsis;white-space: nowrap;}
+.spa_left_cont{background:#343742;color:#fff; padding:0.625em;}
+.spa_right_cont{margin-top:1em}
+.spa_news_cont_title{ font-size:1em;overflow: hidden; text-overflow: ellipsis;white-space: nowrap;}
+.spa_news_cont_show{margin-top:0.2em}
+.spa_news_cont_title a:link,.news_cont_title a:visited{color:#333}
+.spa_news_cont_title a:hover{color:#a21911}
+.spa_foot{background:#a21911;padding:1em; overflow:hidden; clear:both}
+.spa_link{font-size:0.875em;color:#ff9c37;}
+.spa_link a{color:#ff9c37;display:inline-block; margin:0 0.325em}
+.spa_link a:hover{color:#ff9c37;}
+.spa_ewm{overflow:hidden}
+.spa_ewm a{color:#ffcac7}
+.spa_ewm_left{float:left; width:60%;color:#ffcac7;}
+.spa_ewm_right{float:right;}
+.spa_ewm_right img{width:109px; height:109px;}
+.spa_mation{width:100%; padding:5px 0; float:left;}
+.spa_minpic{float:left;}
+.spa_phone{float:left; margin-left:15px;}
+#spa_fanye{font-size:0.875em}
+.spa_show_tit{text-align:center;font-size:1.4em;font-wight:blod;color:#000;}
+.spa_show_from{font-size:0.875em; border-bottom:#CCC solid 1px; border-top:#CCC solid 1px; margin:1em auto; padding:0.6em 0;}
+.spa_show_content{margin:auto}
+.fenye{padding:4px 0px 0px 1px;clear:both;overflow:hidden}
+.fenye a, .fenye span {float:left; display:block; border:1px solid #D3D1D1; padding:2px 5px; margin-left:4px; line-height:1em}
+.fenye a:hover, .fenye a.c {background:#CC0001; color:#FFF}
+#total {color:red}
